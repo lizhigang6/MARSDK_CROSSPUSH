@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MARSDK_CROSSPUSH'
-  s.version          = '5.0.4'
+  s.version          = '5.0.5'
   s.summary          = '火星人打包工具'
 
 
@@ -13,6 +13,9 @@ Pod::Spec.new do |s|
   s.author           = { 'izhigang6@163.com' => 'lizhigang6@163.com' }
   s.source           = { :git => 'https://github.com/lizhigang6/MARSDK_CROSSPUSH.git', :tag => s.version.to_s }
   s.vendored_libraries =  'MARSDK_CROSSPUSH/SDK/*'
+  s.resource_bundles = {
+     'marpushsources' => ['MARSDK_CROSSPUSH/Assets/*']
+  }
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }  
 
