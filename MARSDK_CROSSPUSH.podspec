@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MARSDK_CROSSPUSH'
-  s.version          = '5.0.6'
+  s.version          = '5.0.7'
   s.summary          = '火星人打包工具'
 
 
